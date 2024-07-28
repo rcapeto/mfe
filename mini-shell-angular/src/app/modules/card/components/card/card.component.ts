@@ -47,7 +47,6 @@ export class CardComponent implements AfterViewInit {
     } catch(err) {
       console.log(`Error get ${webComponentName}`, err)
     }
-  
   }
 
   async loadModuleMf2() {
