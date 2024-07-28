@@ -1,5 +1,11 @@
 # mfe
 
+## 1.3.0
+
+### Minor Changes
+
+- e8fde9d: Criando o MFE-1 em Angular e utilizando ele no shell react e shell angular
+
 ## 1.2.0
 
 ### Minor Changes
