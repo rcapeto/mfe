@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [CardComponent],
+  declarations: [],
   imports: [
     CommonModule,
     BrowserModule

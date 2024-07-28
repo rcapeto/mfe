@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'mfe2-card',
@@ -8,22 +9,21 @@ import { Component, ElementRef, Input } from '@angular/core';
 export class CardComponent {
   @Input() href?: string = this.elementRef.nativeElement.getAttribute('href') ?? '';
 
-  constructor(private elementRef: ElementRef) {
-    console.log("@@@ href", { href: this.href, ref: elementRef })
-  }
+  constructor(private elementRef: ElementRef, private router: Router) { }
 
   getPathToNavigate() {
-    if(!this.href || typeof this.href !== 'string') {
-      return []
+    if (!this.href || typeof this.href !== 'string') {
+      return ''
     }
 
-    return [this.href]
+    return this.href
   }
 
   navigate() {
-    const baseRoute = this.getPathToNavigate()
-    baseRoute.push('page1')
+    const href = this.getPathToNavigate()
 
-    window.location.href = baseRoute.join('/')
+    if(href) {
+      this.router.navigate(href?.split('/'))
+    }
   }
 }

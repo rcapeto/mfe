@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
+import { CardModule } from './modules/card/card.module';
 import { CardComponent } from './modules/card/components/card/card.component';
-import { AppChildModule } from './modules/child/app-child.module';
 import { Page1Component } from './pages/page1/page1.component';
 import { Page2Component } from './pages/page2/page2.component';
 
@@ -20,7 +20,7 @@ import { Page2Component } from './pages/page2/page2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppChildModule,
+    CardModule
   ],
   providers: [CardComponent],
   bootstrap: [AppComponent]
