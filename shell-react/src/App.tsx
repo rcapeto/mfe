@@ -1,16 +1,16 @@
 import './index.css'
-import { Mfe1Card } from './microfrontends/mfe1'
-import { Mfe2Card } from './microfrontends/mfe2/Card'
+import { MiniShellReactCard } from './microfrontends/mini-shell-react'
 
 export default function App() {
   return(
     <div className="container">
-      <h1>Shell</h1>
-
-      <Mfe1Card href="/teste/page1"/>
+      <h1>Shell - React</h1>
 
       <div style={{ marginTop: 20 }}>
-        <Mfe2Card />
+        <MiniShellReactCard 
+          hrefMfe1Card="mfe1/page1"
+          hrefMfe2Card="mfe2/page1"
+        />
       </div>
     </div>
   )

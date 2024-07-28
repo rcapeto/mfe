@@ -10,7 +10,8 @@ export function Router() {
         <Route path="/" element={<App />} />
         <Route path="mfe2/*" element={<Mfe2Router />}/>
       </Routes>
-      <Mfe1Routes baseUrl="teste" />
+      
+      <Mfe1Routes baseUrl="mfe1" />
     </BrowserRouter>
   );
 }
