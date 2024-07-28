@@ -22,4 +22,10 @@ export const remoteEntries = {
          Router: 'mfe1-router',
       },
    },
+   miniShell: {
+      url: 'http://localhost:5002/remoteEntry.js',
+      remoteName: {
+         CardComponent: './CardComponent',
+      },
+   }
 }

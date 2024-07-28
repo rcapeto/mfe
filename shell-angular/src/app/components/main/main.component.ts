@@ -8,10 +8,10 @@ import { remoteEntries } from 'src/utils/remoteEntry';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements AfterViewInit {
-  @ViewChild('mfe2_card', { read: ViewContainerRef })
-  mfe2Card!: ViewContainerRef
+  @ViewChild('mini_shell_angular_card', { read: ViewContainerRef })
+  miniShellCard!: ViewContainerRef
 
-  constructor() {}
+  constructor() { }
 
   async ngAfterViewInit() {
     await Promise.all([
@@ -23,20 +23,24 @@ export class MainComponent implements AfterViewInit {
     try {
       const module = await loadRemoteModule({
         type: 'module',
-        remoteEntry: remoteEntries.mfe2.url,
-        exposedModule: remoteEntries.mfe2.remoteName.CardComponent
+        remoteEntry: remoteEntries.miniShell.url,
+        exposedModule: remoteEntries.miniShell.remoteName.CardComponent
       })
 
-      if(module && module.CardComponent) {
-        const cardComponent = this.mfe2Card.createComponent(module.CardComponent, {
-          
-        })
+      if (module && module.CardComponent) {
+        const cardComponent = this.miniShellCard.createComponent(module.CardComponent)
+        const attributes = [
+          { attribute: 'hrefMfe1Card', value: 'mfe1/page1' },
+          { attribute: 'hrefMfe2Card', value: 'mfe2/page1' },
+        ]
 
-        cardComponent.setInput('href', 'mfe2')
+        for (const componentProps of attributes) {
+          cardComponent.setInput(componentProps.attribute, componentProps.value)
+        }
       }
 
-    } catch(err) {
-      console.log(`Error get mfe2-card`, err)
+    } catch (err) {
+      console.log(`Error get mini-shell-angular-card`, err)
     }
   }
 }
