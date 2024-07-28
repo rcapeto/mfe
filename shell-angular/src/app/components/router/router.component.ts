@@ -27,11 +27,10 @@ export class RouterComponent implements AfterViewInit {
         exposedModule: remoteEntries.mfe1.remoteName.Router
       })
 
-      console.log("@@@ module", { module })
-
       if(module) {
         const webComponent = document.createElement(webComponentName)
 
+        // React Router recebe prop baseUrl
         webComponent.setAttribute('baseUrl', 'mfe1')
 
         this.mfe1Card.nativeElement.appendChild(webComponent)
