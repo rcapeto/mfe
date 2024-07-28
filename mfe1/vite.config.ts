@@ -2,18 +2,20 @@ import federation from "@originjs/vite-plugin-federation";
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
-const port = 3000
+const port = 3001
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'shellReact',
+      name: 'mfe1',
       filename: 'remoteEntry.js',
       shared: ['react', 'react-dom', 'react-router-dom'],
-      remotes: {
-        mfe1: 'http://localhost:3001/assets/remoteEntry.js'
+      exposes: {
+        './Card': './src/components/Card/Card.tsx',
+        './Routes': './src/routes/routes.tsx',
+        './Router': './src/routes/router.tsx',
       },
     }),
   ],
