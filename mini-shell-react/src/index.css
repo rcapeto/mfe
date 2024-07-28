@@ -1,0 +1,26 @@
+* {
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+
+.card-container {
+   border: 1px solid #dedede;
+   border-radius: 16px;
+   padding: 24px;
+
+   & .text {
+      color: black;
+   }
+}
+
+.mini-shell-react-bg { 
+   background-color: rgb(10, 206, 56) !important;
+}
+
+.padding {
+   padding: 20px 0;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
