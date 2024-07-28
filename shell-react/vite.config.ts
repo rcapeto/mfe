@@ -13,7 +13,8 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       shared: ['react', 'react-dom', 'react-router-dom'],
       remotes: {
-        mfe1: 'http://localhost:3001/assets/remoteEntry.js'
+        mfe1: 'http://localhost:3001/assets/remoteEntry.js',
+        mfe2: 'http://localhost:5001/remoteEntry.js'
       },
     }),
   ],

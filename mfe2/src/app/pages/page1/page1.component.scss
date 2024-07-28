@@ -1,27 +1,11 @@
-* {
-   padding: 0;
-   box-sizing: border-box;
-   margin: 0;
-}
 
-.container {
-   padding: 20px;
-}
-
-.card-container {
-   border: 1px solid #dedede;
-   border-radius: 16px;
-   padding: 24px;
-   background-color: rgb(11, 167, 234);
-
-   & .text {
-      color: black;
-   }
+.mfe-2-bg { 
+   background-color: rgb(234, 11, 167) !important;
 }
 
 .page-container {
    padding: 24px;
-   background-color: rgb(11, 167, 234);
+   background-color: rgb(234, 11, 167);
    min-width: 100vw;
    min-height: 100vh;
 

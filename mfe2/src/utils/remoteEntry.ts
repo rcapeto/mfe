@@ -11,15 +11,4 @@ export const remoteEntries = {
          Router: 'mfe1-router',
       },
    },
-   mfe2: {
-      url: 'http://localhost:5001/remoteEntry.js',
-      remoteName: {
-         CardComponent: './CardComponent',
-         AppChild: './AppChild',
-      },
-      webComponents: {
-         Card: 'mfe1-card',
-         Router: 'mfe1-router',
-      },
-   },
 }

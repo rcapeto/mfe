@@ -1,0 +1,15 @@
+.card-container {
+   border: 1px solid #dedede;
+   border-radius: 16px;
+   padding: 24px;
+   background-color: rgb(234, 11, 167);
+
+   & .text {
+      color: black;
+   }
+}
+
+.mfe-2-bg { 
+   background-color: rgb(234, 11, 167) !important;
+}
+
