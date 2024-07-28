@@ -1,0 +1,12 @@
+* {
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+
+.container {
+   padding: 20px;
+   background-color: rgb(169, 167, 167);
+   min-width: 100vw;
+   min-height: 100vh;
+}

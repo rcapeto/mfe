@@ -1,13 +1,11 @@
-export function App() {
+import './index.css'
+import { Mfe1Card } from './microfrontends/mfe1'
+
+export default function App() {
   return(
-    <div>
-      <h1>App</h1>
+    <div className="container">
+      <h1>Shell</h1>
+      <Mfe1Card href="/teste/page1"/>
     </div>
   )
 }
-
-// class ReactMfe extends HTMLElement {
-//   connectedCallback() {
-//     console.log("Custom element added to page.");
-//   }
-// }

@@ -11,9 +11,9 @@ export default defineConfig({
     federation({
       name: 'shellReact',
       filename: 'remoteEntry.js',
-      shared: ['react', 'react-dom'],
+      shared: ['react', 'react-dom', 'react-router-dom'],
       remotes: {
-        app: 'http://localhost:3001/assets/remoteEntry.js'
+        mfe1: 'http://localhost:3001/assets/remoteEntry.js'
       },
     }),
   ],
