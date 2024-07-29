@@ -27,5 +27,14 @@ export const remoteEntries = {
       remoteName: {
          CardComponent: './CardComponent',
       },
-   }
+   },
+   miniShellReact: {
+      url: 'http://localhost:3002/assets/remoteEntry.js',
+      remoteName: {
+         Card: './Card',
+      },
+      webComponents: {
+         Card: 'mini-shell-react',
+      },
+   },
 }
