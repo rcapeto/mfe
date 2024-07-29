@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { withSuspense } from "../../hocs/withSuspense";
 
-function Card() {
+type CardProps = {
+   href?: string,
+}
+
+function Card({ href = '' }: CardProps) {
    const [hasError, setHasError] = useState(false)
 
    function loadModule() {
@@ -24,8 +28,8 @@ function Card() {
    }
 
    return (
-      <mfe2-card href="mfe2" />
+      <mfe2-card href={href} />
    )
 }
 
-export const Mfe2Card = withSuspense()(Card)
+export const Mfe2Card = withSuspense<CardProps>()(Card)

@@ -5,6 +5,7 @@ import { Page1Component } from './pages/page1/page1.component';
 import { Page2Component } from './pages/page2/page2.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'mfe2', pathMatch: 'prefix' },
   { path: 'mfe2', component: MainComponent },
   { path: 'mfe2/page1', component: Page1Component },
   { path: 'mfe2/page2', component: Page2Component },

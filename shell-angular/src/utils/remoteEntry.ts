@@ -22,4 +22,19 @@ export const remoteEntries = {
          Router: 'mfe1-router',
       },
    },
+   miniShell: {
+      url: 'http://localhost:5002/remoteEntry.js',
+      remoteName: {
+         CardComponent: './CardComponent',
+      },
+   },
+   miniShellReact: {
+      url: 'http://localhost:3002/assets/remoteEntry.js',
+      remoteName: {
+         Card: './Card',
+      },
+      webComponents: {
+         Card: 'mini-shell-react',
+      },
+   },
 }
