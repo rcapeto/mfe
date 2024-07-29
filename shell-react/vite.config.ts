@@ -16,6 +16,7 @@ export default defineConfig({
         mfe1: 'http://localhost:3001/assets/remoteEntry.js',
         mfe2: 'http://localhost:5001/remoteEntry.js',
         miniShellReact: 'http://localhost:3002/assets/remoteEntry.js',
+        miniShellAngular: 'http://localhost:5002/remoteEntry.js',
       },
     }),
   ],
