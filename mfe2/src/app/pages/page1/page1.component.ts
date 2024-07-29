@@ -13,6 +13,7 @@ export class Page1Component {
     const routePath = this.route.pathFromRoot.map(root => root.routeConfig)
       .filter(Boolean)
       .filter(route => !route?.component)
+      
 
     return routePath.map(route => route?.path ?? '').filter(Boolean)
   }
