@@ -1,5 +1,11 @@
 # mfe
 
+## 1.4.0
+
+### Minor Changes
+
+- 57ca9c0: Criação do mini-shell-react e mini-shell-angular
+
 ## 1.3.0
 
 ### Minor Changes
