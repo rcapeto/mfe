@@ -1,5 +1,11 @@
 # mfe
 
+## 1.4.1
+
+### Patch Changes
+
+- 74d5b4d: Refatorando card do mini-shell-angular e criando singleton no platform do angular
+
 ## 1.4.0
 
 ### Minor Changes
