@@ -18,7 +18,7 @@ export class MainComponent implements AfterViewInit {
 
   async ngAfterViewInit() {
     await Promise.all([
-      this.loadRemoteEntry(),
+      // this.loadRemoteEntry(),
       this.loadRemoteReactEntry(),
     ])
   }
