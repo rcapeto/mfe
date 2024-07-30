@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CardComponent } from './components/card/card.component';
+import { MfeCardComponent } from './components/mfe-card/mfe-card.component';
 
 @NgModule({
   declarations: [],
   imports: [
+    BrowserModule,
     CommonModule,
-    BrowserModule
   ],
-  bootstrap: [CardComponent]
+  bootstrap: [MfeCardComponent]
 })
 export class CardModule { }

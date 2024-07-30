@@ -57,8 +57,8 @@ export class CardComponent implements AfterViewInit {
         exposedModule: remoteEntries.mfe2.remoteName.CardComponent
       })
 
-      if(module && module.CardComponent) {
-        const cardComponent = this.mfe2Card.createComponent(module.CardComponent)
+      if(module && module.MfeCardComponent) {
+        const cardComponent = this.mfe2Card.createComponent(module.MfeCardComponent)
         cardComponent.setInput('href', this.hrefMfe2Card)
       }
 

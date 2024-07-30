@@ -30,7 +30,7 @@ module.exports = {
         name: "mfe2",
         filename: "remoteEntry.js",
         exposes: {
-          './CardComponent': './src/app/modules/card/components/card/card.component.ts',
+          './CardComponent': './src/app/modules/card/components/mfe-card/mfe-card.component.ts',
           './CardWebComponent': './src/app/modules/card/loadModule.js',
           './AppRouter': './src/app/app.module.ts',
           './AppChild': './src/app/modules/child/app-child.module.ts',
