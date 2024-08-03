@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page2',
@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./page2.component.scss']
 })
 export class Page2Component {
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   getBaseRoute() {
     const routePath = this.route.pathFromRoot.map(root => root.routeConfig)
@@ -21,6 +21,6 @@ export class Page2Component {
     const baseRoute = this.getBaseRoute()
     baseRoute.push('page1')
 
-    window.location.href = baseRoute.join('/')
+    this.router.navigate(baseRoute)
   }
 }
