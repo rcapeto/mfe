@@ -1,5 +1,11 @@
 # mfe
 
+## 1.4.2
+
+### Patch Changes
+
+- 49bb4a4: Correção da navegação e nas rotas do MFE-2
+
 ## 1.4.1
 
 ### Patch Changes
