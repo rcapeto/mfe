@@ -1,5 +1,9 @@
+import "./components/Button";
+
 export function App() {
-  return(
-    <h1>Shell</h1>
-  )
+  return (
+    <div>
+      <button-mfe />
+    </div>
+  );
 }

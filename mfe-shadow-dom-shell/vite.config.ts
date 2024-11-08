@@ -2,7 +2,7 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 import { defineConfig } from "vite";
 
-const port = 5002;
+const port = 5001;
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,15 +21,5 @@ export default defineConfig({
   build: {
     target: "esnext",
     cssCodeSplit: false,
-    rollupOptions: {
-      input: {
-        "my-mfe": "./src/components/Button.tsx",
-      },
-      output: {
-        entryFileNames: `assets/[name].js`,
-        chunkFileNames: `assets/[name].js`,
-        assetFileNames: `assets/[name].[ext]`,
-      },
-    },
   },
 });
