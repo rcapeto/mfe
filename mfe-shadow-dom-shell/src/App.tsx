@@ -2,6 +2,7 @@ import { loadWebComponent } from "~/utils/loadWebComponent";
 
 type ButtonProps = {
   text: string;
+  icon?: "arrow_left" | "arrow_right";
 };
 
 const path = "my-mfe.js";
@@ -25,7 +26,7 @@ export function App() {
 
       <button className="bg-red">Esse botão está no shell</button>
 
-      <ButtonMfe text="um teste" />
+      <ButtonMfe text="botão MFE shadow" icon="arrow_right" />
     </div>
   );
 }
